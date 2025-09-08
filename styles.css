@@ -1,0 +1,861 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 1.6;
+    color: #374151;
+    background-color: #ffffff;
+}
+
+.talhacaba-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Button Styles */
+.talhacaba-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.talhacaba-btn-primary {
+    background-color: #059669;
+    color: white;
+}
+
+.talhacaba-btn-primary:hover {
+    background-color: #047857;
+}
+
+.talhacaba-btn-outline {
+    background-color: transparent;
+    color: #059669;
+    border: 1px solid #059669;
+}
+
+.talhacaba-btn-outline:hover {
+    background-color: #059669;
+    color: white;
+}
+
+.talhacaba-btn-large {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+.talhacaba-btn-large i {
+    margin-left: 0.5rem;
+}
+
+.talhacaba-btn-service {
+    width: 100%;
+    margin-top: auto; /* Push to bottom */
+}
+
+.talhacaba-btn-plan {
+    width: 100%;
+}
+
+.talhacaba-btn-plan-popular {
+    background-color: #f59e0b;
+}
+
+.talhacaba-btn-plan-popular:hover {
+    background-color: #d97706;
+}
+
+/* Header Styles */
+.talhacaba-header {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.talhacaba-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.talhacaba-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.talhacaba-logo-icon {
+    font-size: 1.5rem;
+    color: #059669;
+}
+
+.talhacaba-logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.talhacaba-nav-desktop {
+    display: none;
+    gap: 1.5rem;
+}
+
+.talhacaba-nav-link {
+    color: #4b5563;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.talhacaba-nav-link:hover {
+    color: #059669;
+}
+
+.talhacaba-cta-desktop {
+    display: none;
+    gap: 1rem;
+}
+
+.talhacaba-mobile-menu-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #1f2937;
+    cursor: pointer;
+}
+
+.talhacaba-nav-mobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    flex-direction: column;
+    z-index: 40;
+}
+
+.talhacaba-nav-mobile.active {
+    display: flex;
+}
+
+.talhacaba-nav-mobile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.talhacaba-nav-link-mobile {
+    color: #1f2937;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.talhacaba-cta-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Hero Section */
+.talhacaba-hero {
+    background-color: #f9fafb;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.talhacaba-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.talhacaba-hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.talhacaba-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #d1fae5;
+    color: #065f46;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+}
+
+.talhacaba-hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 1.5rem;
+    line-height: 1.2;
+}
+
+.talhacaba-hero-title-accent {
+    display: block;
+    color: #059669;
+}
+
+.talhacaba-hero-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    margin-top: 1rem;
+    max-width: 600px;
+}
+
+.talhacaba-hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.talhacaba-trust-indicators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.talhacaba-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+}
+
+.talhacaba-trust-item i {
+    color: #059669;
+}
+
+.talhacaba-hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: #e5e7eb;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.talhacaba-hero-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.talhacaba-hero-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.talhacaba-placeholder-line {
+    height: 0.5rem;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+}
+
+.talhacaba-line-1 { width: 90%; }
+.talhacaba-line-2 { width: 70%; }
+.talhacaba-line-3 { width: 80%; }
+
+.talhacaba-server-status {
+    margin-top: 1rem;
+}
+
+.talhacaba-status-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.talhacaba-status-header span {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.talhacaba-status-badge {
+    background-color: #d1fae5;
+    color: #065f46;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+}
+
+.talhacaba-status-bar {
+    height: 0.75rem;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    margin-top: 0.5rem;
+}
+
+.talhacaba-status-progress {
+    width: 85%;
+    height: 100%;
+    background-color: #059669;
+    border-radius: 9999px;
+}
+
+.talhacaba-floating-element {
+    position: absolute;
+    background-color: white;
+    border-radius: 9999px;
+    padding: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: float 3s ease-in-out infinite;
+}
+
+.talhacaba-floating-element i {
+    font-size: 1.2rem;
+    color: #059669;
+}
+
+.talhacaba-floating-1 { top: 10%; left: 5%; animation-delay: 0.5s; }
+.talhacaba-floating-2 { bottom: 15%; right: 10%; animation-delay: 1.5s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Services, Pricing, Features, Testimonials */
+.talhacaba-services, .talhacaba-pricing, .talhacaba-features, .talhacaba-testimonials {
+    padding: 5rem 0;
+}
+
+.talhacaba-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.talhacaba-section-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-section-description {
+    font-size: 1.125rem;
+    color: #6b7280;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Services Grid */
+.talhacaba-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.talhacaba-service-card {
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.talhacaba-service-icon {
+    font-size: 2.5rem;
+    color: #059669;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-service-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.talhacaba-service-description {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-service-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+.talhacaba-service-features li {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #4b5563;
+    margin-bottom: 0.5rem;
+}
+
+.talhacaba-feature-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #059669;
+    border-radius: 9999px;
+    margin-right: 0.75rem;
+}
+
+/* Pricing Grid */
+.talhacaba-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.talhacaba-pricing-card {
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.talhacaba-pricing-card-popular {
+    background-color: #1f2937;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.talhacaba-pricing-card-popular .talhacaba-plan-name,
+.talhacaba-pricing-card-popular .talhacaba-price {
+    color: white;
+}
+
+.talhacaba-pricing-card-popular .talhacaba-plan-description,
+.talhacaba-pricing-card-popular .talhacaba-period,
+.talhacaba-pricing-card-popular .talhacaba-plan-features li {
+    color: #9ca3af;
+}
+
+.talhacaba-pricing-card-popular .talhacaba-plan-features i {
+    color: #f59e0b;
+}
+
+.talhacaba-popular-badge {
+    background-color: #f59e0b;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.talhacaba-pricing-header {
+    margin-bottom: 1.5rem;
+}
+
+.talhacaba-plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.talhacaba-plan-description {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.talhacaba-plan-price {
+    margin-top: 1rem;
+}
+
+.talhacaba-price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.talhacaba-period {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+.talhacaba-pricing-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.talhacaba-plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1; /* Pushes button to bottom */
+}
+
+.talhacaba-plan-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-plan-features i {
+    color: #059669;
+}
+
+.talhacaba-pricing-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Features Section */
+.talhacaba-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.talhacaba-feature-item {
+    text-align: center;
+}
+
+.talhacaba-feature-icon {
+    font-size: 3rem;
+    color: #059669;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.talhacaba-feature-description {
+    color: #6b7280;
+}
+
+.talhacaba-stats-section {
+    padding-top: 3rem;
+}
+
+.talhacaba-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+    background-color: #f3f4f6;
+    border-radius: 1rem;
+    padding: 2.5rem;
+}
+
+.talhacaba-stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #059669;
+}
+
+.talhacaba-stat-label {
+    font-size: 1rem;
+    color: #4b5563;
+}
+
+/* Testimonials */
+.talhacaba-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.talhacaba-testimonial-card {
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.talhacaba-testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.talhacaba-testimonial-quote {
+    font-size: 1.5rem;
+    color: #d1d5db;
+}
+
+.talhacaba-testimonial-rating {
+    color: #f59e0b;
+}
+
+.talhacaba-testimonial-content {
+    font-style: italic;
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+.talhacaba-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto; /* push to bottom */
+}
+
+.talhacaba-author-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #059669;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    font-weight: bold;
+}
+
+.talhacaba-author-name {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.talhacaba-author-company {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* Footer */
+.talhacaba-footer {
+    background-color: #1f2937;
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.talhacaba-footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.talhacaba-footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.talhacaba-footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-footer-logo .talhacaba-logo-icon {
+    color: #059669;
+}
+
+.talhacaba-footer-logo .talhacaba-logo-text {
+    color: white;
+}
+
+.talhacaba-footer-description {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    margin-bottom: 1.5rem;
+}
+
+.talhacaba-social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.talhacaba-social-link {
+    color: #9ca3af;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.talhacaba-social-link:hover {
+    color: white;
+}
+
+.talhacaba-footer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.talhacaba-footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.talhacaba-footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+.talhacaba-footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.talhacaba-footer-links a:hover {
+    color: #059669;
+}
+
+.talhacaba-contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.talhacaba-contact-info li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 0.75rem;
+}
+
+.talhacaba-contact-info i {
+    color: #059669;
+    margin-right: 0.75rem;
+    margin-top: 0.125rem;
+}
+
+.talhacaba-contact-info span {
+    color: #9ca3af;
+}
+
+.talhacaba-footer-bottom {
+    border-top: 1px solid #374151;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.talhacaba-footer-bottom p {
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.talhacaba-footer-bottom-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.talhacaba-footer-bottom-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.3s ease;
+}
+
+.talhacaba-footer-bottom-links a:hover {
+    color: #059669;
+}
+
+@media (min-width: 768px) {
+    .talhacaba-nav-desktop, .talhacaba-cta-desktop {
+        display: flex;
+    }
+    .talhacaba-mobile-menu-btn {
+        display: none;
+    }
+    .talhacaba-hero-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    .talhacaba-hero-text, .talhacaba-hero-visual {
+        flex: 1;
+    }
+    .talhacaba-hero-text {
+        align-items: flex-start;
+    }
+    .talhacaba-hero-buttons {
+        flex-direction: row;
+    }
+    .talhacaba-trust-indicators {
+        justify-content: flex-start;
+    }
+    .talhacaba-stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .talhacaba-footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .talhacaba-footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1024px) {
+    .talhacaba-footer-content {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}
