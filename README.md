@@ -18,15 +18,16 @@ Yumuşak Kaydırma: Sayfa içi navigasyon için akıcı kaydırma animasyonları
 Projenin temel dosya ve klasör yapısı aşağıdaki gibidir:
 
 /
-├── index.html        # Ana sayfa
-├── giris-yap.php     # Giriş yapma sayfası
-├── kayit-ol.php      # Kayıt olma sayfası
-├── fiyatlar.php      # Fiyatlandırma sayfası
-├── iletisim.php      # İletişim sayfası
-├── styles.css        # Tüm sitenin stil dosyası
-├── config.php        # Tema ayar sayfası
-├── footer.php        # Footer
-└── header.php        # Menü
+── index.html        # Ana sayfa
+── giris-yap.php     # Giriş yapma sayfası
+── kayit-ol.php      # Kayıt olma sayfası
+── fiyatlar.php      # Fiyatlandırma sayfası
+── iletisim.php      # İletişim sayfası
+── styles.css        # Tüm sitenin stil dosyası
+── config.php        # Tema ayar sayfası
+── footer.php        # Footer
+── header.php        # Menü
+
 🛠️ Kurulum ve Kullanım
 Proje dosyalarını yerel veya uzak bir web sunucusuna (cPanel, Plesk, Apache veya Nginx) yükleyin.
 
