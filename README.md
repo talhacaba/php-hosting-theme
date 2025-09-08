@@ -8,8 +8,6 @@ Temiz ve Modern Arayüz: Şık ve minimal bir tasarıma sahiptir.
 
 Dinamik Sayfalar: Giriş (giris-yap.php), kayıt (kayit-ol.php), fiyatlandırma (fiyatlar.php) ve iletişim (iletisim.php) için ayrı sayfalar.
 
-Özel CSS Sınıfları: Olası çakışmaları önlemek amacıyla tüm CSS sınıflarının başına talhacaba- öneki eklenmiştir.
-
 Yumuşak Kaydırma: Sayfa içi navigasyon için akıcı kaydırma animasyonları içerir.
 
 🚀 Ekran Görüntüsü
