@@ -19,23 +19,23 @@ Projenin temel dosya ve klasör yapısı aşağıdaki gibidir:
 
 /
 
-── index.html        # Ana sayfa
+├── index.html        # Ana sayfa
 
-── giris-yap.php     # Giriş yapma sayfası
+├── giris-yap.php     # Giriş yapma sayfası
 
-── kayit-ol.php      # Kayıt olma sayfası
+├── kayit-ol.php      # Kayıt olma sayfası
 
-── fiyatlar.php      # Fiyatlandırma sayfası
+├── fiyatlar.php      # Fiyatlandırma sayfası
 
-── iletisim.php      # İletişim sayfası
+├── iletisim.php      # İletişim sayfası
 
-── styles.css        # Tüm sitenin stil dosyası
+├── styles.css        # Tüm sitenin stil dosyası
 
-── config.php        # Tema ayar sayfası
+├── config.php        # Tema ayar sayfası
 
-── footer.php        # Footer
+├── footer.php        # Footer
 
-── header.php        # Menü
+└── header.php        # Menü
 
 ## 🛠️ Kurulum ve Kullanım
 Proje dosyalarını yerel veya uzak bir web sunucusuna (cPanel, Plesk, Apache veya Nginx) yükleyin.
