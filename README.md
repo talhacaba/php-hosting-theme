@@ -1,5 +1,5 @@
 Modern Hosting Web Sitesi
-Bu proje, modern ve duyarlı bir web hosting lansman sayfasıdır. HTML, CSS ve JavaScript teknolojileriyle oluşturulmuş olup, PHP ile desteklenen dinamik sayfalar içerir.
+Bu proje, modern ve duyarlı bir web hosting lansman sayfasıdır. HTML, CSS teknolojileriyle oluşturulmuş olup, PHP ile desteklenen dinamik sayfalar içerir.
 
 ✨ Özellikler
 Duyarlı Tasarım: Masaüstü, tablet ve mobil cihazlarda sorunsuz bir kullanıcı deneyimi sunar.
